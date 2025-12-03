@@ -16,7 +16,7 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO)
 
 MODEL = os.getenv("MODEL", "gemini-2.5-flash-preview-09-2025")
-GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "AIzaSyBkLlfSIk8_POLCPFXtRoXoLzAuQWiZe38")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "")
 
 if not GEMINI_API_KEY:
     logging.error("GEMINI_API_KEY is not set.")
