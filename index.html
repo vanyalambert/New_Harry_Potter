@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Hogwarts Mystery</title>
+    <!-- Optional: loads the Cinzel font you referenced -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game-container">
+      <div class="header">
+        <div class="hogwarts-crest">⚡</div>
+        <button class="new-game-btn" id="newGameBtn">New Game</button>
+        <h1>The Hogwarts Mystery</h1>
+        <div class="subtitle">An Interactive Magical Adventure</div>
+      </div>
+      <div class="status-bar">
+        <div class="status-item">
+          <span class="status-icon">📍</span>
+          <span
+            ><strong>Location:</strong>
+            <span id="location">The Great Hall</span></span
+          >
+        </div>
+        <div class="status-item">
+          <span class="status-icon">🔍</span>
+          <span><strong>Clues Found:</strong> <span id="clues">0</span></span>
+        </div>
+        <div class="status-item">
+          <span class="status-icon">🌙</span>
+          <span id="time">Evening</span>
+        </div>
+      </div>
+      <div class="content">
+        <div class="messages-container" id="messages">
+          <!-- Messages will be dynamically added here by app.js -->
+        </div>
+        <div class="action-box">
+          <div class="action-title">
+            <span>✏️</span>
+            <span>Your Action</span>
+          </div>
+          <div class="input-container">
+            <input
+              type="text"
+              class="action-input"
+              id="actionInput"
+              placeholder="Type your command here... (e.g., 'examine the shimmer', 'talk to someone', 'go to library')"
+            />
+            <button class="submit-btn" id="submitBtn">
+              <span>📨</span>
+              <span>Submit</span>
+            </button>
+          </div>
+          <div class="tip">
+            <span>💡</span>
+            <span
+              >Tip: Try examining objects, talking to characters, or moving to
+              different locations</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- External JS -->
+    <script src="app.js" defer></script>
+  </body>
+</html>
+
